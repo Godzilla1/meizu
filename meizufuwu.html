@@ -1,0 +1,502 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>服务</title>
+<link rel="stylesheet" type="text/css" href="css/meizufuwucss.css">
+<link rel="stylesheet" type="text/css" href="css/responsiveslides.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+</head>
+
+<body>
+<!---->
+<div class="wrapper" id="wrapper">
+
+    <div class="bg-white"></div>
+
+    <header class="header">
+      <div class="container">
+        <h1 class="logo"><a href="index.html"></a></h1>
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#">魅族商城</a>
+          </li>
+          <li class="nav-item" data-subNav="nav_iphone">
+            <a href="#">魅族手机</a>
+          </li>
+          <li class="nav-item" data-subNav="nav_subIphone">
+            <a href="#">魅蓝手机</a>
+          </li>
+          <li class="nav-item" data-subNav="nav_voice">
+            <a href="#">魅族声学</a>
+          </li>
+          <li class="nav-item" data-subNav="nav_parts">
+            <a href="#">智能 · 配件</a>
+          </li>
+          <li class="nav-item">
+            <a href="meizufuwu.html">服务</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">专卖店</a>
+          </li>
+          <li class="nav-item">
+            <a href="meizuFlyme.html">Flyme</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">社区</a>
+          </li>
+        </ul>
+        <div class="user">
+          <div class="user-hover"></div>
+          <div class="user-img">
+            <img src="imgs/user.png" alt="#">
+            <span class="arrow-bg"></span>
+            <span class="arrow-font"></span>
+          </div>
+          <div class="user-info">
+            <ul>
+              <li class="login"><a href="#">立即登录</a></li>
+              <li class="register">没有账号?<a href="#">立即注册</a></li>
+              <li><a href="#">我的购物车</a></li>
+              <li><a href="#">我的订单</a></li>
+              <li><a href="#">M码通道</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="sub-nav">
+      <div class="sub-nav__wrap" data-link="nav_iphone">
+        <a href="#">
+          <img src="imgs/cont/1-1.png" alt="#">
+          <span>PRO 6 Plus</span>
+        </a>
+        <a href="#">
+          <img src="imgs/cont/1-2.png" alt="#">
+          <span>PRO 6s</span>
+        </a>
+        <a href="#">
+          <img src="imgs/cont/1-3.png" alt="#">
+          <span>MX6</span>
+        </a>
+        <a href="#">
+          <img src="imgs/cont/1-4.png" alt="#">
+          <span>PRO6</span>
+        </a>
+        <a href="#">
+          <img src="imgs/cont/1-5.png" alt="#">
+          <span>PRO5</span>
+        </a>
+      </div>
+      <div class="sub-nav__wrap" data-link="nav_subIphone">
+        <a href="#">
+          <img src="imgs/cont/2-1.png" alt="#">
+          <span>MZUI Note5</span>
+        </a>
+        <a href="#">
+          <img src="imgs/cont/2-2.png" alt="#">
+          <span>PRO 6s</span>
+        </a>
+        <a href="#">
+          <img src="imgs/cont/2-3.png" alt="#">
+          <span>MX6</span>
+        </a>
+        <a href="#">
+          <img src="imgs/cont/2-4.png" alt="#">
+          <span>PRO6</span>
+        </a>
+        <a href="#">
+          <img src="imgs/cont/2-5.png" alt="#">
+          <span>PRO5</span>
+        </a>
+        <a href="#">
+          <img src="imgs/cont/2-6.png" alt="#">
+          <span>PRO5</span>
+        </a>
+        <a href="#">
+          <img src="imgs/cont/2-7.png" alt="#">
+          <span>PRO5</span>
+        </a>
+      </div>
+      <div class="sub-nav__wrap" data-link="nav_voice">
+        <a href="#">
+          <img src="imgs/cont/3-1.png" alt="#">
+          <span>PRO 6 Plus</span>
+        </a>
+        <a href="#">
+          <img src="imgs/cont/3-2.png" alt="#">
+          <span>PRO 6s</span>
+        </a>
+        <a href="#">
+          <img src="imgs/cont/3-3.png" alt="#">
+          <span>MX6</span>
+        </a>
+      </div>
+      <div class="sub-nav__wrap" data-link="nav_parts">
+        <a href="#">
+          <img src="imgs/cont/4-1.png" alt="#">
+          <span>PRO 6 Plus</span>
+        </a>
+        <a href="#">
+          <img src="imgs/cont/4-2.png" alt="#">
+          <span>PRO 6s</span>
+        </a>
+        <a href="#">
+          <img src="imgs/cont/4-3.png" alt="#">
+          <span>MX6</span>
+        </a>
+        <a href="#">
+          <img src="imgs/cont/4-4.png" alt="#">
+          <span>PRO6</span>
+        </a>
+        <a href="#">
+          <img src="imgs/cont/4-5.png" alt="#">
+          <span>PRO5</span>
+        </a>
+        <a href="#">
+          <img src="imgs/cont/4-6.png" alt="#">
+          <span>PRO5</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+    <script src="js/jquery.min.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/navChange.js"></script>
+  <script>
+    $(function () {
+
+      var slider1 = new Slider();
+      var doc_h = $(document.body).width();
+
+      slider1.inital('sliderBox', {
+        slider_num: 4,
+        w: doc_h,
+        h: 760
+      });
+    });
+
+  </script>
+<!---->
+<div class="div1">
+	<div class="div1-st">
+ <!--自助服务--><div class="div1-a">
+        	<p class="p1">自助服务</p>
+            <div class="div1-a1">
+            	<div class="zzfw">
+                	<ul>
+                    	<li>
+                        	<a href="#">
+                            	<img src="imgs/zwcx_icon_4779c6a.png">
+                                <br>
+                                <em>查询真伪</em>
+                            </a>
+                        </li>
+                    	<li>
+                        	<a href="#">
+                            	<img src="imgs/jskx_icon_aa3cac8.png">
+                                <br>
+                                <em>寄送快修</em>
+                            </a>
+                        </li>
+                    	<li>
+                        	<a href="#">
+                            	<img src="imgs/yywx_icon_31d9b4b.png">
+                                <br>
+                                <em>预约维修</em>
+                            </a>
+                        </li>
+                    	<li>
+                        	<a href="#">
+                            	<img src="imgs/smkx_icon_39f8153.png">
+                                <br>
+                                <em>上门快修</em>
+                            </a>
+                        </li>
+                    	<li>
+                        	<a href="#">
+                            	<img src="imgs/wxcx_icon_0ab06b0.png">
+                                <br>
+                                <em>维修查询</em>
+                            </a>
+                        </li>
+                    	<li>
+                        	<a href="#">
+                            	<img src="imgs/zccp_icon_93f9089.png">
+                                <br>
+                                <em>注册产品</em>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="zzfw-ul">
+                	<li>
+                    	<a href="#">
+                        	<span>
+                        		<img src="imgs/123.png">Cycle
+                            </span>
+                            <span class="zzfw-ul-span">以旧换新</span>
+                        </a>
+                    </li>
+                	<li>
+                    	<a href="#">
+                        	<span>
+                        		<img src="imgs/124.png">Support
+                            </span>
+                            <span class="zzfw-ul-span1">远程支持</span>
+                        </a>
+                    </li>
+                	<li>
+                    	<a href="#">
+                        	<span>
+                        		<img src="imgs/125.png">mCare
+                            </span>
+                            <span class="zzfw-ul-span2">魅族服务</span>
+                        </a>
+                    </li>
+                	<li>
+                    	<a href="#">
+                        	<span>
+                        		<img src="imgs/126.png">VIP service                      		</span>
+                            <span class="zzfw-ul-span3">旗舰尊享</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+ <!--产品分区--><div class="div1-b">
+ 			   		<p class="p1">产品分区</p>
+                    <div class="cpfq">
+                    	<ul>
+                        	<li>
+                            	<a href="#">
+                                	<img src="imgs/mobile_548abcb.png" class="cpfq-img1">
+                                    <p>魅族手机</p>
+                                </a>
+                            </li>
+                        	<li>
+                            	<a href="#">
+                                	<img src="imgs/meilan_0566a72.png" class="cpfq-img2">
+                                    <p>魅蓝手机</p>
+                                </a>
+                            </li>
+                        	<li>
+                            	<a href="#">
+                                	<img src="imgs/accessory_f903df8.png" class="cpfq-img3">
+                                    <p class="cpfq-p">智能 · 配件</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>	
+ 			   </div>
+ <!--常见问题--><div class="div1-c">
+        	<p class="p1">常见问题</p>
+            <div class="cjwt">
+            	<ul class="cjwt-ul">
+                	<li class="cjwt-li">
+                    	<a href="#" class="cjwt-li-a">购买帮助</a>
+                        <ul>
+                        	<li>
+                            	<a href="#">支付方式</a>
+                            </li>
+                        	<li>
+                            	<a href="#">配送说明</a>
+                            </li>
+                        	<li>
+                            	<a href="#">付款帮助</a>
+                            </li>
+                        	<li>
+                            	<a href="#">手机配件价格</a>
+                            </li>
+                        </ul>
+                    </li>
+                	<li class="cjwt-li">
+                    	<a href="#" class="cjwt-li-a">售后政策</a>
+                        <ul>
+                        	<li>
+                            	<a href="#">7天无理由退货</a>
+                            </li>
+                        	<li>
+                            	<a href="#">15天换货保障</a>
+                            </li>
+                        	<li>
+                            	<a href="#">1年免费保修</a>
+                            </li>
+                        	<li>
+                            	<a href="#">配件售后政策</a>
+                            </li>
+                        </ul>                    	
+                    </li>
+                	<li class="cjwt-li">
+                    	<a href="#" class="cjwt-li-a">系统相关</a>
+                        <ul>
+                        	<li>
+                            	<a href="#">手机系统下载</a>
+                            </li>
+                        	<li>
+                            	<a href="#">MP3系统下载</a>
+                            </li>
+                        	<li>
+                            	<a href="#">预置应用说明</a>
+                            </li>
+                        </ul>                    	
+                    </li>
+                	<li class="cjwt-li">
+                    	<a href="#" class="cjwt-li-a">热门问题</a>
+                        <ul>
+                        	<li>
+                            	<a href="#">MX6</a>
+                            </li>
+                        	<li>
+                            	<a href="#">魅蓝3S</a>
+                            </li>
+                        	<li>
+                            	<a href="#">魅蓝3</a>
+                            </li>
+                        	<li>
+                            	<a href="#">PRO6</a>
+                            </li>
+                        </ul>                    	
+                    </li>
+                	<li class="cjwt-li">
+                    	<a href="#" class="cjwt-li-a">特色服务</a>
+                        <ul>
+                        	<li>
+                            	<a href="#">mArrive百城速达</a>
+                            </li>
+                        	<li>
+                            	<a href="#">VIP服务</a>
+                            </li>
+                        	<li>
+                            	<a href="#">远程服务支持</a>
+                            </li>
+                        </ul>                    	
+                    </li>
+                </ul>
+            </div>
+        </div>
+ <!--联系我们--><div class="div1-d">
+ 			   		<p class="p1">联系我们</p>
+                    <div class="lxwm">
+                    	<ul>
+                        	<li>
+                            	<a href="#">
+                                	<img src="imgs/store_icon_eaa19d5.png">
+                                    <p class="lxwm-p">专卖店</p>
+                                    <p class="lxwm-p1">2000+专卖店</p>
+                                </a>
+                            </li>
+                        	<li>
+                            	<a href="#">
+                                	<img src="imgs/repair_icon_c17bd43.png">
+                                    <p class="lxwm-p2">服务中心</p>
+                                    <p class="lxwm-p3">300+服务中心</p>
+                                </a>
+                            </li>
+                        	<li>
+                            	<a href="#">
+                                	<img src="imgs/hotline_icon_f06f41f.png">
+                                    <p class="lxwm-p2">致电客服</p>
+                                    <p class="lxwm-p3">24小时全国服务热线</p>
+                                </a>
+                            </li>
+                        	<li>
+                            	<a href="#">
+                                	<img src="imgs/store_icon_eaa19d5.png">
+                                    <p class="lxwm-p">在线客服</p>
+                                    <p class="lxwm-p1">24小时在线客服</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+               </div>
+    </div>
+</div>
+<!--结尾-->
+<div class="divjw">
+	<div class="div-foot">
+    	 <ul>
+        	<li>
+            	<a href="#">
+            		<img src="imgs/1.png">
+            		<span>全场包邮</span>
+                </a>
+            </li>
+        	<li>
+            	<a href="#">
+            		<img src="imgs/2.png">
+            		<span>百城速达</span>
+                </a>
+            </li>
+        	<li>
+            	<a href="#">
+            		<img src="imgs/3.png">
+            		<span>7天无理由退货</span>
+                </a>
+            </li>
+        	<li>
+            	<a href="#">
+            		<img src="imgs/4.png">
+            		<span>15天换货保障</span>
+                </a>
+            </li>
+        	<li>
+            	<a href="#">
+            		<img src="imgs/5.png">
+            		<span>1年免费保修</span>
+                </a>
+            </li>
+        	<li>
+            	<a href="#">
+            		<img src="imgs/6.png">
+            		<span>2300+线下体验店</span>
+                </a>
+            </li>
+        	<li>
+            	<a href="#">
+            		<img src="imgs/7.png">
+            		<span>远程支持服务</span>
+                </a>
+            </li>
+        	<li>
+            	<a href="#">
+            		<img src="imgs/8.png">
+            		<span>上门快修</span>
+                </a>
+            </li>
+        </ul> 
+        <div class="foot-st">
+			<span>24小时全国服务热线</span>
+       		<p>400-788-3333</p>
+       	 	<a href="#">
+        	<img src="imgs/12.png">
+        	在线服务
+        	</a>
+   		</div>
+    </div>
+
+	<div class="foot-zs">
+    	<ul>
+        	<li>了解魅族</li>
+        	<li>加入我没</li>
+        	<li>联系我们</li>
+        	<li>Flyme</li>
+        	<li>魅族社区</li>
+        	<li>天猫旗舰店</li>
+        	<li>问题反馈</li>
+        	<li>线上销售授权名单公示</li>
+        	<li>中文</li>
+        </ul>
+        <div class="foot-sz">
+        	
+                    ©2017 Meizu Telecom Equipment Co., Ltd. All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;
+                     粤ICP备13003602号-2 粤B2-20130198 营业执照 法律声明  粤公网安备 44049102496009 号 
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
